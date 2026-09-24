@@ -21,7 +21,7 @@ class Principal {
             } else if (resposta.equals("N") || resposta.equals("NAO") || resposta.equals("NÃO")) {
                 continuar = false;
             } else {
-                System.out.println("❌ Resposta inválida! Digite S para SIM ou N para NÃO.\n");
+                System.out.println("Resposta inválida! Digite S para SIM ou N para NÃO.\n");
             }
         }
 
@@ -39,16 +39,16 @@ class Principal {
             String nomeUsuario = scanner.nextLine().trim();
 
             if (nomeUsuario.isEmpty()) {
-                System.out.println("❌ Nome não pode estar vazio!\n");
+                System.out.println(" Nome não pode estar vazio!\n");
                 return;
             }
 
             biblioteca.realizarEmprestimo(idLivro, nomeUsuario);
 
         } catch (NumberFormatException e) {
-            System.out.println("❌ ID inválido! Digite apenas números.\n");
+            System.out.println("ID inválido! Digite apenas números.\n");
         } catch (Exception e) {
-            System.out.println("❌ Erro inesperado: " + e.getMessage() + "\n");
+            System.out.println("Erro inesperado: " + e.getMessage() + "\n");
         }
     }
 }
