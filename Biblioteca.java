@@ -81,7 +81,7 @@ class Biblioteca {
         Emprestimo emprestimo = new Emprestimo(proximoIdEmprestimo++, livro, nomeUsuario);
         emprestimos.add(emprestimo);
 
-        System.out.println("\n✅ EMPRÉSTIMO REALIZADO COM SUCESSO! ✅");
+        System.out.println("\n EMPRÉSTIMO REALIZADO COM SUCESSO!");
         System.out.println("Livro: \"" + livro.getTitulo() + "\"");
         System.out.println("Autor: " + livro.getAutor().getNome());
         System.out.println("Emprestado para: " + nomeUsuario);
